@@ -20,7 +20,7 @@ class DataIngestion:
 
     def initiate_data_ingestion(self):
         try:
-            ## reading code
+            ## reading code 
             df=read_sql_data()
             logging.info("reading data from mysql database")
 
@@ -37,7 +37,7 @@ class DataIngestion:
 
             logging.info("Data Ingestion is completed")
 
-            return( self.initiate_config.train_data_path,self.initiate_config.test_data_path)
+            return(self.initiate_config.train_data_path,self.initiate_config.test_data_path)
 
         except Exception as e:
             raise CustomException(e,sys)
