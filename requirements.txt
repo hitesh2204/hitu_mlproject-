@@ -8,5 +8,5 @@ python-dotenv
 scikit-learn
 catboost
 xgboost
-
+SciPy
 #-e.
